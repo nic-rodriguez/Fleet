@@ -10,8 +10,8 @@
 		10636C952013FB7000F45B1F /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 10636C942013FB7000F45B1F /* GoogleService-Info.plist */; };
 		10636C962013FB7000F45B1F /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 10636C942013FB7000F45B1F /* GoogleService-Info.plist */; };
 		10636C972013FB7000F45B1F /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 10636C942013FB7000F45B1F /* GoogleService-Info.plist */; };
+		1096C6FB201FE1D20052764A /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1096C6FA201FE1D20052764A /* LoginViewController.swift */; };
 		10B214A31FB0E4D500628A05 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10B214A21FB0E4D500628A05 /* AppDelegate.swift */; };
-		10B214A51FB0E4D500628A05 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10B214A41FB0E4D500628A05 /* ViewController.swift */; };
 		10B214A81FB0E4D500628A05 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 10B214A61FB0E4D500628A05 /* Main.storyboard */; };
 		10B214AA1FB0E4D500628A05 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 10B214A91FB0E4D500628A05 /* Assets.xcassets */; };
 		10B214AD1FB0E4D500628A05 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 10B214AB1FB0E4D500628A05 /* LaunchScreen.storyboard */; };
@@ -41,9 +41,9 @@
 
 /* Begin PBXFileReference section */
 		10636C942013FB7000F45B1F /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		1096C6FA201FE1D20052764A /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		10B2149F1FB0E4D500628A05 /* Fleet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Fleet.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		10B214A21FB0E4D500628A05 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		10B214A41FB0E4D500628A05 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		10B214A71FB0E4D500628A05 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		10B214A91FB0E4D500628A05 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		10B214AC1FB0E4D500628A05 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -120,11 +120,11 @@
 			isa = PBXGroup;
 			children = (
 				10B214A21FB0E4D500628A05 /* AppDelegate.swift */,
-				10B214A41FB0E4D500628A05 /* ViewController.swift */,
 				10B214A61FB0E4D500628A05 /* Main.storyboard */,
 				10B214A91FB0E4D500628A05 /* Assets.xcassets */,
 				10B214AB1FB0E4D500628A05 /* LaunchScreen.storyboard */,
 				10B214AE1FB0E4D500628A05 /* Info.plist */,
+				1096C6FA201FE1D20052764A /* LoginViewController.swift */,
 			);
 			path = Fleet;
 			sourceTree = "<group>";
@@ -400,12 +400,14 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-Fleet/Pods-Fleet-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
 				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
 				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
@@ -470,7 +472,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				10B214A51FB0E4D500628A05 /* ViewController.swift in Sources */,
+				1096C6FB201FE1D20052764A /* LoginViewController.swift in Sources */,
 				10B214A31FB0E4D500628A05 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
